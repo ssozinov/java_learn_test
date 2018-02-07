@@ -4,7 +4,12 @@ class MyFirstProgram {
     public static void main(String[] args) {
         int b=4;
         hello ("foo");
-        System.out.println(testReturn());
+        Square s=new Square(5);
+        Rectangle r= new Rectangle(5,4);
+
+
+        System.out.println(area(s));
+        System.out.println(area(r));
     }
 
     public static void hello (String s)
@@ -12,8 +17,13 @@ class MyFirstProgram {
         System.out.println(s);
     }
 
-    public  static int  testReturn ()
+    public  static double  area (Square s)
     {
-        return 5;
+        return  s.l*s.l;
+    }
+
+    public  static double  area (Rectangle r)
+    {
+        return  r.a*r.b;
     }
 }
