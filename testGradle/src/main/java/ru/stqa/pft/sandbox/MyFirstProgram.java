@@ -8,8 +8,8 @@ class MyFirstProgram {
         Rectangle r= new Rectangle(5,4);
 
 
-        System.out.println(area(s));
-        System.out.println(area(r));
+        System.out.println(s.area());
+        System.out.println(r.area());
     }
 
     public static void hello (String s)
@@ -17,13 +17,7 @@ class MyFirstProgram {
         System.out.println(s);
     }
 
-    public  static double  area (Square s)
-    {
-        return  s.l*s.l;
-    }
 
-    public  static double  area (Rectangle r)
-    {
-        return  r.a*r.b;
-    }
+
+
 }
